@@ -1,0 +1,247 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|d:\\hack\\umniedzialarepo\\backflip\\backend_solution\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|d:\\hack\\umniedzialarepo\\backflip\\backend_solution\\backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|d:\\hack\\umniedzialarepo\\backflip\\backend_solution\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|d:\\hack\\umniedzialarepo\\backflip\\backend_solution\\backend\\services\\photoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\services\\photoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|d:\\hack\\umniedzialarepo\\backflip\\backend_solution\\backend\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|d:\\hack\\umniedzialarepo\\backflip\\backend_solution\\backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|d:\\hack\\umniedzialarepo\\backflip\\backend_solution\\backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|d:\\hack\\umniedzialarepo\\backflip\\backend_solution\\backend\\models\\userupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\models\\userupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|d:\\hack\\umniedzialarepo\\backflip\\backend_solution\\backend\\models\\userloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\models\\userloginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|d:\\hack\\umniedzialarepo\\backflip\\backend_solution\\backend\\models\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\models\\token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|d:\\hack\\umniedzialarepo\\backflip\\backend_solution\\backend\\models\\userregisterrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD7A06E8-BAE7-4370-B539-672C43364935}|BackEnd\\BackEnd.csproj|solutionrelative:backend\\models\\userregisterrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PhotoController.cs",
+              "DocumentMoniker": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Controllers\\PhotoController.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Controllers\\PhotoController.cs",
+              "ToolTip": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Controllers\\PhotoController.cs",
+              "RelativeToolTip": "BackEnd\\Controllers\\PhotoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T20:20:56.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserLoginRequest.cs",
+              "DocumentMoniker": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Models\\UserLoginRequest.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Models\\UserLoginRequest.cs",
+              "ToolTip": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Models\\UserLoginRequest.cs",
+              "RelativeToolTip": "BackEnd\\Models\\UserLoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T16:24:58.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Token.cs",
+              "DocumentMoniker": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Models\\Token.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Models\\Token.cs",
+              "ToolTip": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Models\\Token.cs",
+              "RelativeToolTip": "BackEnd\\Models\\Token.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T15:04:26.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Program.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Program.cs",
+              "ToolTip": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Program.cs",
+              "RelativeToolTip": "BackEnd\\Program.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwDoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T13:35:20.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserUpdateRequest.cs",
+              "DocumentMoniker": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Models\\UserUpdateRequest.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Models\\UserUpdateRequest.cs",
+              "ToolTip": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Models\\UserUpdateRequest.cs",
+              "RelativeToolTip": "BackEnd\\Models\\UserUpdateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T19:38:16.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Controllers\\UserController.cs",
+              "RelativeToolTip": "BackEnd\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAQwIsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T12:30:40.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PhotoService.cs",
+              "DocumentMoniker": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Services\\PhotoService.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Services\\PhotoService.cs",
+              "ToolTip": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Services\\PhotoService.cs",
+              "RelativeToolTip": "BackEnd\\Services\\PhotoService.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAYwI8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T20:33:08.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Models\\User.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Models\\User.cs",
+              "ToolTip": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Models\\User.cs",
+              "RelativeToolTip": "BackEnd\\Models\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwBMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T14:50:13.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserRegisterRequest.cs",
+              "DocumentMoniker": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Models\\UserRegisterRequest.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Models\\UserRegisterRequest.cs",
+              "ToolTip": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Models\\UserRegisterRequest.cs",
+              "RelativeToolTip": "BackEnd\\Models\\UserRegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T14:15:15.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\appsettings.json",
+              "RelativeDocumentMoniker": "BackEnd\\appsettings.json",
+              "ToolTip": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\appsettings.json",
+              "RelativeToolTip": "BackEnd\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-15T13:24:17.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "BackEnd\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Hack\\umniedzialarepo\\backflip\\BackEnd_Solution\\BackEnd\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "BackEnd\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwB4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T12:31:17.696Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -24,7 +24,7 @@ namespace BackEnd.Controllers
         public async Task<ActionResult<PhotoListResponse>> GetMyPhotos()
         {
             var email = User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
-            if (string.IsNullOrEmpty(email)) return Unauthorized();
+            if (string.IsNullOrEmpty(email)) return Unauthorized("Brak autoryzacji");
 
             var list = await _photoService.ListUserPhotosAsync(email);
             return Ok(list);

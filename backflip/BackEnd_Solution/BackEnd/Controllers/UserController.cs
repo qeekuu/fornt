@@ -134,14 +134,14 @@ namespace BackEnd.Controllers
             CookieOptions? cookieOptions = new CookieOptions
             {
                 HttpOnly = true,
-                Secure = true,
-                SameSite = SameSiteMode.Strict,
+                Secure = false,
+                SameSite = SameSiteMode.Lax,
                 Expires = jwtToken.ValidTo
             };
 
             Response.Cookies.Append("authToken",tokenString,cookieOptions);
 
-            return Ok(tokenString.ToString());
+            return Ok( tokenString );
         }
 
         [HttpPost("logout")]
@@ -182,6 +182,62 @@ namespace BackEnd.Controllers
             Response.Cookies.Delete("authToken");
 
             return Ok("Konto zostało usunięte pomyślnie.");
+        }
+
+        [HttpPut("edit_user")]
+        [Authorize]
+        public async Task<IActionResult> Edituser(UserUpdateRequest u_user)
+        {
+            string? userEmail = User.Claims.FirstOrDefault((e) => e.Type == JwtRegisteredClaimNames.Sub)?.Value;
+            if (string.IsNullOrEmpty(userEmail))
+            {
+                return Unauthorized("Nieautoryzowany dostęp.");
+            }
+
+            User? user = await _context.Users.FirstOrDefaultAsync((u) => u.Email == userEmail);
+            if(user == null)
+            {
+                return NotFound("Użytkownik nie istnieje.");
+            }
+
+            if(string.IsNullOrEmpty(u_user.Name) || string.IsNullOrEmpty(u_user.Surname) || string.IsNullOrEmpty(u_user.Login))
+            {
+                return BadRequest("Imie, Nazwisko i Login są wymagane.");
+            }
+
+            user.Name = u_user.Name;
+            user.Surname = u_user.Surname;
+            user.Login = u_user.Login;
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
+            return Ok("Pomyślnie zaktualizowano dane użytkownika.");
+        }
+
+        [HttpGet("get_user_logged_data")]
+        [Authorize]
+        public async Task<IActionResult> GetCurrentUser()
+        {
+            string? userEmail = User.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.Sub)?.Value;
+            if (string.IsNullOrEmpty(userEmail))
+            {
+                return Unauthorized("Nieautoryzowany dostęp.");
+            }
+
+            User? user = await _context.Users.FirstOrDefaultAsync(u => u.Email == userEmail);
+            if (user == null)
+            {
+                return NotFound("Użytkownik nie istnieje.");
+            }
+
+            UserResponse? response = new UserResponse
+            {
+                Email = user.Email,
+                Login = user.Login,
+                Name = user.Name,
+                Surname = user.Surname
+            };
+
+            return Ok(response);
         }
     }
 }

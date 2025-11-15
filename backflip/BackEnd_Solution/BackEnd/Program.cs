@@ -1,10 +1,11 @@
 using BackEnd.Data;
 using BackEnd.Models;
+using BackEnd.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using System.Reflection;
+using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 namespace BackEnd
 {
@@ -13,10 +14,15 @@ namespace BackEnd
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+
+
             builder.Services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
             builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
 
+            builder.Services.AddScoped<FileStorageService>();
+            builder.Services.AddScoped<PhotoService>();
 
             builder.Services.AddControllers();
 
@@ -44,7 +50,7 @@ namespace BackEnd
             {
                 throw new Exception("Brak klucza JWT w konfiguracji (Jwt:Key).");
             }
-
+            JwtSecurityTokenHandler.DefaultMapInboundClaims = false;
             builder.Services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -67,11 +73,33 @@ namespace BackEnd
                 {
                     OnMessageReceived = context =>
                     {
+                        var loggerFactory = context.HttpContext.RequestServices.GetService(typeof(ILoggerFactory)) as ILoggerFactory;
+                        var logger = loggerFactory?.CreateLogger("JwtBearerEvents");
                         var token = context.Request.Cookies["authToken"];
                         if (!string.IsNullOrEmpty(token))
                         {
+                            logger?.LogInformation("OnMessageReceived: authToken cookie found, length={Length}", token.Length);
                             context.Token = token;
                         }
+                        else
+                        {
+                            logger?.LogInformation("OnMessageReceived: no authToken cookie present");
+                        }
+                        return Task.CompletedTask;
+                    },
+                    OnTokenValidated = context =>
+                    {
+                        var loggerFactory = context.HttpContext.RequestServices.GetService(typeof(ILoggerFactory)) as ILoggerFactory;
+                        var logger = loggerFactory?.CreateLogger("JwtBearerEvents");
+                        var sub = context.Principal?.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
+                        logger?.LogInformation("OnTokenValidated: sub={Sub}", sub);
+                        return Task.CompletedTask;
+                    },
+                    OnAuthenticationFailed = context =>
+                    {
+                        var loggerFactory = context.HttpContext.RequestServices.GetService(typeof(ILoggerFactory)) as ILoggerFactory;
+                        var logger = loggerFactory?.CreateLogger("JwtBearerEvents");
+                        logger?.LogWarning(context.Exception, "OnAuthenticationFailed: {Message}", context.Exception?.Message);
                         return Task.CompletedTask;
                     }
                 };
