@@ -1,0 +1,65 @@
+.leftNav {
+  position: fixed;
+  top: 0;
+  align-self: stretch;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-start;
+  align-items: stretch;
+
+  padding: 2rem 1rem;
+  width: clamp(200px, 18vw, 320px);
+  min-height: 100vh;
+
+  background-color: var(--color-bg-accent);
+  border-right: 0.1rem solid var(--color-primary);
+
+  > .leftNavLogo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+	padding: 1rem;
+
+    > p {
+      font-family: var(--font-lato), sans-serif;
+      font-weight: 600;
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+    }
+  }
+
+  > .leftNavMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem;
+
+    > .leftNavItem {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+	  transition: all 0.1s ease;
+
+      padding: 0.7rem 0.9rem;
+
+      &:hover {
+        background-color: var(--color-accent);
+		border: 0.1rem solid var(--color-primary);
+      }
+    }
+  }
+
+.searchInput {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  border-radius: 0.3rem;
+}
+
+
+}
+
